@@ -4,13 +4,13 @@
 
 ### 1. Clone repository
 ```bash
-git clone https://github.com/Duyduide/Shoot-em-Up.git
+git clone https://github.com/Alcization/Web.git
 cd Web
 
 ```
 ### 2. Install container docker
 ```bash
-docker 
+docker run -d -p 80:80 -v __PATH_TO_Web_FOLDER__:var/www/html --name php-container php:apache
 
 ```
 

@@ -13,6 +13,13 @@ cd Web
 docker run -d -p 80:80 -v __PATH_TO_Web_FOLDER__:var/www/html --name php-container php:apache
 
 ```
+### 3. Endpoint
+http://localhost/               # index
+http://localhost/about.php      # about
+http://localhost/finance.php    # finance
+http://localhost/account.php    # account
+http://localhost/admin.php      # admin
+
 
 ## Cấu trúc file
 

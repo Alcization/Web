@@ -8,7 +8,7 @@
   <label>Amount: <input name="amount" value="100.00" required></label>
   <div style="display:flex;gap:8px">
     <button class="btn btn-primary" type="submit">Send (demo)</button>
-    <button class="btn btn-ghost" type="button" onclick="location.href='/transactions.php'">View Transactions</button>
+    <button class="btn btn-ghost1" type="button" onclick="location.href='/transactions.php'">View Transactions</button>
   </div>
 </form>
 </div>

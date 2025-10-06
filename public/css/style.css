@@ -1,5 +1,5 @@
 /* Improved UI: sticky footer, professional buttons */
-html,body{min-height:1000px;margin:0;padding:0}
+html,body{margin:0;padding:0}
 
 body{
   font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
@@ -21,8 +21,6 @@ body{
 .footer{
   background:#ffffff;border-top:1px solid #e6ecf3;padding:16px 20px;font-size:13px;color:#5b6b7a;
   text-align:center;flex-shrink:0;
-  padding-top: 100px;
-  margin-top: 700px!important;
 }
 
 /* Card */
@@ -48,8 +46,13 @@ body{
 }
 .btn-primary:hover{filter:brightness(1.03)}
 .btn-ghost{
-  background:transparent;color:#0b61d6;border:1px solid rgba(7,74,168,0.12);
+  background:transparent;color:#ffffff;border:1px solid rgba(7,74,168,0.12);
 }
+
+.btn-ghost1{
+  background:transparent;color:#000000;border:1px solid rgba(7,74,168,0.12);
+}
+
 .btn-danger{
   background:linear-gradient(180deg,#e45757,#c73232);color:white;
   box-shadow:0 6px 18px rgba(196,57,57,0.12);

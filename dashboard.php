@@ -9,7 +9,7 @@
   </div>
   <div style="display:flex;gap:8px">
     <button class="btn btn-primary" onclick="location.href='/transfer.php'">Transfer</button>
-    <button class="btn btn-ghost" onclick="location.href='/transactions.php'">Transactions</button>
+    <button class="btn btn-ghost1" onclick="location.href='/transactions.php'">Transactions</button>
   </div>
 </div>
 
@@ -20,7 +20,7 @@
     <p style="margin:6px 0">Balance: <strong>5,400</strong></p>
   </div>
   <div style="display:flex;gap:8px">
-    <button class="btn btn-ghost" onclick="location.href='/transactions.php'">Transactions</button>
+    <button class="btn btn-ghost1" onclick="location.href='/transactions.php'">Transactions</button>
   </div>
 </div>
 

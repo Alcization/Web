@@ -2,7 +2,7 @@
 <h2>Transactions (Demo)</h2>
 <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px">
   <div style="color:#5b6b7a">List of demo transactions</div>
-  <div><button class="btn btn-ghost" onclick="location.href='/api.php?action=txs'">Open JSON</button> <button class="btn btn-primary" onclick="location.href='/index.php'">Back Home</button></div>
+  <div><button class="btn btn-ghost1" onclick="location.href='/api.php?action=txs'">Open JSON</button> <button class="btn btn-primary" onclick="location.href='/index.php'">Back Home</button></div>
 </div>
 <?php
 $txs = json_decode(file_get_contents(__DIR__ . '/data/txs.json'), true) ?? [];

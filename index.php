@@ -1,29 +1,13 @@
-<?php
-$title = "Home Page";
-$content = "<p>This is the Home endpoint.</p>";
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title><?php echo $title; ?></title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; }
-    header { background: #f4f4f4; padding: 10px; border-radius: 6px; margin-bottom: 20px; }
-    h1 { color: #333; }
-    footer { margin-top: 20px; font-size: 0.9em; color: gray; }
-  </style>
-</head>
-<body>
-  <header>
-    <h1><?php echo $title; ?></h1>
-    <p>Endpoint: <?php echo $_SERVER['PHP_SELF']; ?></p>
-  </header>
-
-  <main>
-    <?php echo $content; ?>
-  </main>
-
-</body>
-</html>
+<?php include 'templates/header.php'; ?>
+<h1 style="margin-top:6px">Welcome to MOCK BANK — DEMO</h1>
+<p style="color:#5b6b7a;max-width:820px">No login required — all pages are prebuilt for UI testing. Use the buttons below to jump to the mock endpoints.</p>
+<div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px">
+  <button class="btn btn-primary" onclick="location.href='/dashboard.php'">Open Dashboard</button>
+  <button class="btn btn-ghost" onclick="location.href='/accounts.php'">View Accounts</button>
+  <button class="btn btn-ghost" onclick="location.href='/transfer.php'">Transfer (Demo)</button>
+  <button class="btn btn-ghost" onclick="location.href='/transactions.php'">Transactions</button>
+  <button class="btn btn-ghost" onclick="location.href='/about.php'">About</button>
+  <button class="btn btn-ghost" onclick="location.href='/contact.php'">Contact</button>
+  <button class="btn btn-danger" onclick="location.href='/admin.php'">Admin (Demo)</button>
+</div>
+<?php include 'templates/footer.php'; ?>

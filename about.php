@@ -1,29 +1,4 @@
-<?php
-$title = "About Page";
-$content = "<p>This is the About endpoint.</p>";
-?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title><?php echo $title; ?></title>
-  <style>
-    body { font-family: Arial, sans-serif; margin: 40px; }
-    header { background: #f4f4f4; padding: 10px; border-radius: 6px; margin-bottom: 20px; }
-    h1 { color: #333; }
-    footer { margin-top: 20px; font-size: 0.9em; color: gray; }
-  </style>
-</head>
-<body>
-  <header>
-    <h1><?php echo $title; ?></h1>
-    <p>Endpoint: <?php echo $_SERVER['PHP_SELF']; ?></p>
-  </header>
-
-  <main>
-    <?php echo $content; ?>
-  </main>
-
-</body>
-</html>
+<?php include 'templates/header.php'; ?>
+<h2>About MOCK BANK — DEMO (No Auth)</h2>
+<p>Static demo site for UI and security testing. No authentication enforced. NOT A REAL BANK.</p>
+<?php include 'templates/footer.php'; ?>

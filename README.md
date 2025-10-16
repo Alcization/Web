@@ -10,49 +10,29 @@ cd Web
 ```
 ### 2. Install container docker
 ```bash
-docker run -d -p 80:80 -v __PATH_TO_Web_FOLDER__:var/www/html --name php-container php:apache
+docker run -d -p 81:80 -v __PATH_TO_Web_FOLDER__\public:var/www/html --name php-public php:apache
+
+docker run -d -p 82:80 -v __PATH_TO_Web_FOLDER__\private:var/www/html --name php-private php:apache
+
+docker run -d -p 83:80 -v __PATH_TO_Web_FOLDER__\admin:var/www/html --name php-admin php:apache
 
 ```
 
 ### 3. Endpoint
-http://localhost/                # Trang chủ (index)
+http://localhost:81/index.php           # Trang chủ
 
-http://localhost/about.php       # Giới thiệu
+http://localhost:81/about.php           # Giới thiệu
 
-http://localhost/finance.php     # Tài chính
+http://localhost:81/contact.php         # Giới thiệu
 
-http://localhost/account.php     # Tài khoản
+http://localhost:82/dashboard.php       # Trang chào mừng đăng nhập
 
-http://localhost/admin.php       # Quản trị
+http://localhost:82/account.php         # Tài khoản
 
-http://localhost/transfer.php    # Chuyển tiền
+http://localhost:82/transfer.php        # Chuyển tiền
 
-http://localhost/transactions.php # Lịch sử giao dịch
+http://localhost:82/transactions.php    # Lịch sử giao dịch
+
+http://localhost:83/admin.php           # Quản trị
 
 
-## Cấu trúc file
-
-```
-mock-bank/
-├── index.php                   # Trang chủ
-├── about.php                   # Giới thiệu
-├── finance.php                 # Tài chính
-├── account.php                 # Tài khoản
-├── admin.php                   # Trang quản trị
-├── transfer.php                # Chuyển tiền
-├── transactions.php            # Lịch sử giao dịch
-│ 
-│ 
-├── templates/
-│   ├── header.php              # Header chung
-│   ├── footer.php              # Footer chung
-├── public/
-│   ├── css/
-│   │   └── style.css           # CSS giao diện
-│   └── js/
-│       └── main.js             # Script JS (nếu có)
-├── data/
-│   ├── users.json              # Danh sách người dùng giả lập
-│   └── txs.json                # Lịch sử giao dịch
-└── README.md                   # Hướng dẫn sử dụng
-```

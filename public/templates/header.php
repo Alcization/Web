@@ -5,6 +5,7 @@
   <title>MOCK BANK — DEMO</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="/public/css/style.css">
+  <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
 </head>
 <body>
   <div class="topbar">

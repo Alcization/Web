@@ -1,0 +1,17 @@
+{
+    "alice": {
+        "id": 1,
+        "name": "Alice Demo",
+        "balance": 1900
+    },
+    "bob": {
+        "id": 2,
+        "name": "Bob Demo",
+        "balance": 15500
+    },
+    "admin": {
+        "id": 99,
+        "name": "Administrator",
+        "balance": 0
+    }
+}

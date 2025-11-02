@@ -16,6 +16,8 @@ docker run -d -p 82:80 -v __PATH_TO_Web_FOLDER__\private:var/www/html --name php
 
 docker run -d -p 83:80 -v __PATH_TO_Web_FOLDER__\admin:var/www/html --name php-admin php:apache
 
+docker run -d -p 84:80 -v __PATH_TO_Web_FOLDER__\server:var/www/html --name php-server php:apache
+
 ```
 
 ### 3. Endpoint

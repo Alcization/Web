@@ -1,15 +1,15 @@
 <?php 
 include 'templates/header.php'; 
 ?>
-<h2>Transfer (Demo)</h2>
+<h2>Transfer</h2>
 <p style="color:#5b6b7a">This form now calls the smart 'transfer' service.</p>
 <div class="card">
 <form method="post" action="/transfer.php" style="display:grid;gap:12px;max-width:520px">
-  <label>From (username): <input name="from_username" value="alice" required></label>
-  <label>To (username): <input name="to_username" value="bob" required></label>
-  <label>Amount: <input name="amount" value="100.00" required></label>
+  <!-- <label>From (username): <input name="from_username" value="alice" required></label> -->
+  <label>To (username): <input name="to_username" value="" required></label>
+  <label>Amount: <input name="amount" value="" required></label>
   <div style="display:flex;gap:8px">
-    <button class="btn btn-primary" type="submit">Send (demo)</button>
+    <button class="btn btn-primary" type="submit">Send</button>
     <button class="btn btn-ghost1" type="button" onclick="location.href='/transactions.php'">View Transactions</button>
   </div>
 </form>
@@ -22,7 +22,7 @@ $message_type = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   include_once 'lib.php';
 
-  $from = $_POST['from_username'] ?? '';
+  $from = $_POST['from_username'] ?? 'alice';
   $to = $_POST['to_username'] ?? '';
   $amount = floatval($_POST['amount'] ?? 0);
 
